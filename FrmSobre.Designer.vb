@@ -46,6 +46,7 @@ Partial Class FrmSobre
         Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuSobre = New System.Windows.Forms.ToolStripMenuItem()
         Me.PicImage = New System.Windows.Forms.PictureBox()
+        Me.ofdSelecionaImg = New System.Windows.Forms.OpenFileDialog()
         optCorDeFundoPadrao = New System.Windows.Forms.RadioButton()
         Me.grpCorDeFundoPadrao.SuspendLayout()
         Me.mnuPrincipal.SuspendLayout()
@@ -252,6 +253,11 @@ Partial Class FrmSobre
         Me.PicImage.TabIndex = 13
         Me.PicImage.TabStop = False
         '
+        'ofdSelecionaImg
+        '
+        Me.ofdSelecionaImg.Filter = "Windows Bitmap | *.BMP| JPEG files| *.JPG"
+        Me.ofdSelecionaImg.Title = "Selecione uma imagem"
+        '
         'FrmSobre
         '
         Me.AcceptButton = Me.btnOk
@@ -310,4 +316,5 @@ Partial Class FrmSobre
     Friend WithEvents mnuSobre As ToolStripMenuItem
     Friend WithEvents mnuConfirmarAoSairToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PicImage As PictureBox
+    Friend WithEvents ofdSelecionaImg As OpenFileDialog
 End Class
